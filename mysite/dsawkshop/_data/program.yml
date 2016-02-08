@@ -1,0 +1,81 @@
+- time : June 18th 8:00
+  description: >
+    Arrival and Registration 
+- time : 09:00-09:20
+  presenters : Prof.Ndirangu, Prof.Paul Wambua DVC RTMCL DeKUT, Ciira Maina, Dekut
+  description: >
+    Opening Remarks
+    
+- session: Session 1
+  description: Agriculture
+  
+- time: 9:20–12:50
+  presenters: "Laiana Samuel , IBM Research Africa"
+  description: >
+    Optimizing small scale Farm Management in Kenya using a Frugal Plant -Based Approach for Irrigation Scheduling 
+    
+- time: 9:50 -10-20
+  presenters: Ernest Mwebaze, Makerere University
+  description: >
+    Automated Monitoring of Viral Cassava Disease
+    
+- time: 10:20 - 10:50
+  description: >
+    Coffee break
+    
+- session: Session 2
+  description: Crisis Management
+  
+- time: 10:50–11:20
+  presenters: Nuri Purswani, IBM Research Africa
+  description: >
+    Z Construction Of A Resiliency Platform for Preventing Future Crises In Sierra Leone 
+- time: 11:20–11:50
+  presenters: Sidney Ochieng, iHub 
+  description: >
+    Umati: Monitoring Dangerous Speech Online
+- time: 11:50–12:20
+  presenters: Julius Adebayo, MIT
+  description: >
+    The Punya Mobile Application Development Platform 
+- time: 12.20 – 13.30
+  description: >
+    Lunch
+    
+- session: Session 3
+  description: Health, Bioinformatics and Privacy
+  
+- time: 13:30–14:00
+  presenters:  Neil Lawrence, University of Sheffield
+  description: >
+    Personalised Medicine 
+- time: 14:00–14:30
+  presenters:  Martin Mubangizi, Makerere University
+  description: >
+      Improved Modelling of Malaria Incidence with Telecoms Data 
+     
+- time: 14:30–15:00
+  presenters:   Michael Smith, University of Sheffield
+  description: >
+    Differential Privacy 
+    
+- time: 15:00–15:30
+ 
+  description: >
+    Coffee Break  
+
+- time: 15:30–16:00
+  presenters:   Rosaline Macharia, ICIPE
+  description: >
+    Comparative Genomics of Tsetse's Chemosensory Proteins 
+    
+- time: 16:00–16:30
+  presenters:   Nelly Ndungu - ICIPE
+  description: >
+    Concordance of Morphometrics and DNA barcoding in identifying Stingless bee species (Apidae: Meliponinae) in Kenya 
+    
+- time: 16:30–17:30
+  presenters:  Ciira Maina, DeKUT 
+  description: >
+    Investigating Traditional Systems of Medicine Using Phylogenies Derived from Gene Sequences 
+    

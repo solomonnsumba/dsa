@@ -1,0 +1,1 @@
+# Społeczna Gra Zespołowa

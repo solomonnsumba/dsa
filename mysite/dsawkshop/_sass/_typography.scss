@@ -1,0 +1,59 @@
+body {
+	font-family: 'Signika', sans-serif;
+}
+strong, b, h2, h3, h4, .site-nav, .intro {
+	font-weight: 600;
+}
+a {
+	text-decoration: none;
+}
+h2 {
+	font-size: 32px;
+}
+h3 {
+	font-size: 26px;
+}
+.btn {
+	display: inline-block;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 6px 10px;
+	background-color: #00b1bc;
+	border: 2px solid $zolty;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	&:hover,
+	&:focus {
+		outline: none;
+		background-color: $granatowy;
+	}
+}
+.cyfra {
+	display: block;
+	color: $zolty;
+	font-size: 48px;
+	line-height: 1;
+}
+.wieksze {
+	font-size: 1.222em;
+	line-height: 1.145;
+}
+b {
+	color: $niebieski;
+}
+tr {
+	border-top: 1px dotted $niebieski;
+}
+td {
+	padding-bottom: 0.625em;
+	&:first-child {
+		padding-right: 1.25em;
+		min-width: 112px;
+		vertical-align: top;
+	}
+	p {
+		margin-top: 0;
+		margin-bottom: 0.375em;
+	}
+}

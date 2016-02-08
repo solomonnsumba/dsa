@@ -1,0 +1,38 @@
+# Site settings
+title: Data Science Workshop
+port: 8900
+host: localhost
+#baseurl: http://localhost:8900/
+description: > # this means to ignore newlines until "baseurl:"
+  Interdyscyplinarne seminarium naukowe dotyczące fenomenu Społecznej Gry Zespołowej. Tematem przewodnim seminarium jest patriotyzm ekonomiczny i związane z gospodarką zjawisko sieci społecznych.
+#url: "http://spolecznagrazespolowa.pl"
+
+# Build settings
+markdown: kramdown
+prose:
+  siteurl: 'http://spolecznagrazespolowa.pl/'
+  media: 'img/badacze'
+  ignore: ['_includes','_layouts','_sass','css','img','js','.gitignore','_config.yml','CNAME','README.md','android-chrome-144x144.png','android-chrome-192x192.png','android-chrome-36x36.png','android-chrome-48x48.png','android-chrome-72x72.png','android-chrome-96x96.png','apple-touch-icon-114x114.png','apple-touch-icon-120x120.png','apple-touch-icon-144x144.png','apple-touch-icon-152x152.png','apple-touch-icon-180x180.png','apple-touch-icon-57x57.png','apple-touch-icon-60x60.png','apple-touch-icon-72x72.png','apple-touch-icon-76x76.png','apple-touch-icon-precomposed.png','apple-touch-icon.png','browserconfig.xml','favicon-16x16.png','favicon-194x194.png','favicon-32x32.png','favicon-96x96.png','favicon.ico','feed.xml','manifest.json','mstile-144x144.png','mstile-150x150.png','mstile-310x150.png','mstile-310x310.png','mstile-70x70.png']
+gems:[jekyll-scholar-extras]
+
+permalink: /:year/:month/:day/:title
+exclude:   ["Rakefile", "no-build"]
+title:     Hiren D. Patel
+url:       http://ece.uwaterloo.ca/~hdpatel/uwhtml
+
+# jekyll-scholar configurations
+scholar:
+  style: _publications/custom-hdp.csl
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  source: ./_publications
+  bibliography: test.bib
+  details_dir: ./publications/details
+  details_layout: details.html
+  #query: "@*[public!=no]"
+  source:      .
+destination: ./_site
+plugins:     ./_plugins

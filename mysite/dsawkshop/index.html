@@ -1,0 +1,90 @@
+---
+layout: default
+klasa: home
+slideshow:
+  - background_image_path: /images/slider/bg1.jpg
+    main_heading: First Slide
+    sub_heading: This is the sub heading for the first slide
+    read_more_link: http://google.com
+    pop_up_image_path: /images/slider/img1.png
+  - background_image_path: /images/slider/bg2.jpg
+    main_heading: Second Slide
+    sub_heading: This is the sub heading for the second slide
+    read_more_link: /blog.html
+    pop_up_image_path: /images/slider/img2.png
+  - background_image_path: /images/slider/bg3.jpg
+    main_heading: Third Heading
+    sub_heading: This is the sub heading for the third slide
+    read_more_link: /portfolio.html
+    pop_up_image_path: /images/slider/img3.png
+---
+ <section id="main-slider" class="no-margin">
+        <div class="carousel slide">
+<!--
+            <ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="1"></li>
+                <li data-target="#main-slider" data-slide-to="2"></li>
+            </ol>
+-->
+    <ol class="carousel-indicators">
+    {% for item in page.slideshow %}
+      {% if forloop.index == 1 %}
+        <li data-target="#main-slider" data-slide-to="{{ forloop.index0 }}" class="active"></li>
+      {% else %}
+        <li data-target="#main-slider" data-slide-to="{{ forloop.index0 }}"></li>
+      {% endif %}
+    {% endfor %}
+</ol>
+    <div class="carousel-inner">
+  {% for item in page.slideshow %}
+    {% if forloop.index == 1 %}
+      <div class="item active" style="background-image: url({{ item.background_image_path }})">
+    {% else %}
+      <div class="item" style="background-image: url({{ item.background_image_path }})">
+    {% endif %}
+      <div class="container">
+        <div class="row slide-margin">
+          <div class="col-sm-6">
+            <div class="carousel-content">
+              <h1 class="animation animated-item-1">{{ item.main_heading }}</h1>
+              <h2 class="animation animated-item-2">{{ item.sub_heading }}</h2>
+              <a class="btn-slide animation animated-item-3" href="{{ item.read_more_link }}">Read More</a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 hidden-xs animation animated-item-4">
+            <div class="slider-img">
+              <img src="{{ item.pop_up_image_path }}" class="img-responsive">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div><!--/.item-->
+  {% endfor %}
+</div>
+    </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+            <i class="fa fa-chevron-left"></i>
+        </a>
+        <a class="next hidden-xs" href="#main-slider" data-slide="next">
+            <i class="fa fa-chevron-right"></i>
+        </a>
+    </section><!--/#main-slider-->
+
+
+
+<div class="intro">
+	<p>Zapraszamy do wzięcia udziału w debacie nad zjawiskiem Społecznej Gry Zespołowej!</p>
+ <p>Debatę inicjujemy organizując interdyscyplinarne seminarium naukowe. W dniu <span class="wieksze">21&nbsp;maja&nbsp;br.</span> Fundacja Kazimierza Wielkiego wraz z Wyższą Szkołą Bankową będą miały przyjemność gościć badaczy i praktyków gotowych do dyskusji nad fenomenem Społecznej Gry Zespołowej. Tematem przewodnim seminarium jest patriotyzm ekonomiczny i związane z gospodarką zjawisko sieci społecznych, a uczestnikami będą autorzy naukowych analiz wszelkich form kooperacji i usieciowienia społecznych aktorów ważnych z punktu widzenia gospodarki i rozwoju społecznego oraz praktycy reprezentujący polskie środowisko biznesowe. Zapraszamy godz. 11.00 sala 177 Ip. WSB ul. Dekerta 26 </p>
+ <a href                                                                                   ="/idea/" class="btn">Więcej&nbsp;»</a>
+</div>
+<img class="ryby" src="/img/ryby.png" alt="W kupie siła!">
+<div class="punkty">
+	<div><span class="cyfra">1 </span>Do zgłaszania referatów zapraszamy wszystkich badaczy, których prace wpisują się w zakres Społecznej Gry Zespołowej, a w szczególności patriotyzmu ekonomicznego i sieci społecznych. Mile widziane są również zgłoszenia dotyczące innych zjawisk noszących znamiona Społecznej Gry Zespołowej. Akceptujemy zarówno prace teoretyczne, jak i prezentację badań empirycznych. Prosimy o nadsyłanie zgłoszeń na adres: <a href="&#x6d;&#97;&#x69;&#000108;&#x74;&#000111;&#x3a;&#x6b;&#x6f;&#000110;&#x74;&#x61;&#x6b;&#x74;&#00064;&#115;&#x70;&#000111;&#x6c;&#x65;&#x63;&#x7a;&#000110;&#97;&#x67;&#000114;&#x61;&#x7a;&#101;&#000115;&#000112;&#x6f;&#108;&#111;&#000119;&#97;&#x2e;&#112;&#108;">&#000107;&#x6f;&#x6e;&#000116;&#x61;&#x6b;&#116;&#64;&#x73;&#112;&#000111;&#x6c;&#000101;&#x63;&#122;&#000110;&#97;&#000103;&#114;&#x61;&#x7a;&#101;&#x73;&#112;&#x6f;&#x6c;&#x6f;&#x77;&#97;&#00046;&#x70;&#108;</a> do dnia 5 maja 2015.</div>
+	<div><span class="cyfra">2 </span>Organizatorzy zapraszają przedstawicieli świata biznesu do wzięcia udziału w seminarium. Zachęcamy do wspólnej dyskusji nad rolą świadomej konsumpcji, patriotyzmu konsumenckiego i barierach rozwoju polskiej przedsiębiorczości. Firmy zainteresowane udziałem prosimy o kontakt: <a href="&#x6d;&#97;&#x69;&#000108;&#x74;&#000111;&#x3a;&#x6b;&#x6f;&#000110;&#x74;&#x61;&#x6b;&#x74;&#00064;&#115;&#x70;&#000111;&#x6c;&#x65;&#x63;&#x7a;&#000110;&#97;&#x67;&#000114;&#x61;&#x7a;&#101;&#000115;&#000112;&#x6f;&#108;&#111;&#000119;&#97;&#x2e;&#112;&#108;">&#000107;&#x6f;&#x6e;&#000116;&#x61;&#x6b;&#116;&#64;&#x73;&#112;&#000111;&#x6c;&#000101;&#x63;&#122;&#000110;&#97;&#000103;&#114;&#x61;&#x7a;&#101;&#x73;&#112;&#x6f;&#x6c;&#x6f;&#x77;&#97;&#00046;&#x70;&#108;</a>.
+</div>
+	<div><span class="cyfra">3 </span>Wszystkie osoby zainteresowane ideą patriotyzmu ekonomicznego zapraszamy do wzięcia udziału w seminarium i zaplanowanej dyskusji. Zapraszamy do przyjścia do Wyższej Szkoły Bankowej 21 maja sala 177 B Ip. Start o godz. 11.00. Wstęp wolny!</div>
+</div>
